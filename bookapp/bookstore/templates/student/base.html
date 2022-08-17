@@ -42,7 +42,7 @@
                     
 
                     {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link text" href="{% url 'home' %}">{{user.username}}</a></li>
+                    <li class="nav-item"><a class="nav-link text" href="{% url 'profile' %}">{{user.username}}</a></li>
                     <li class="nav-item"><a class="nav-link text" href="{% url 'logout' %}" data-toggle="modal" data-target="#logoutModal">Sign Out</a></li>
                         {% else %}
                         <li class="nav-item"><a class="nav-link text" href="{% url 'regform' %}">Sign Up</a></li>

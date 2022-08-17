@@ -23,5 +23,6 @@ urlpatterns = [
     path('send_feedback/', views.send_feedback, name="send_feedback"),
     path('about/', views.about, name="about"),
     path('usearch/', views.usearch, name="usearch"),
+    path('profile/', views.profile, name='profile'),
 
 ]
